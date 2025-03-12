@@ -1,0 +1,43 @@
+1. Insert States  
+   - URL: POST /api/states  
+   - Description: Add a new state with population and area details.  
+
+2. Insert Districts  
+   - URL: POST /api/districts  
+   - Description: Add a new district linked to a state using state_id.  
+
+3. Retrieve Population for a Specific State  
+   - URL: GET /api/states/:name/population  
+   - Description: Get the population of a specific state by name.  
+
+4. Update District Population  
+   - URL: PUT /api/districts/:name/population  
+   - Description: Update the population of a specific district by name.  
+
+5. Delete District  
+   - URL: DELETE /api/districts/:name  
+   - Description: Remove a district by name.  
+
+6. Compute Total Population Across All States  
+   - URL: GET /api/states/total-population  
+   - Description: Calculate the sum of populations of all states.  
+
+7. Group and Sort Districts by Population  
+   - URL: GET /api/districts/group-by-state  
+   - Description: Aggregate districts by state and calculate total population for each, sorted in descending order.  
+
+8. Join States with Districts  
+   - URL: GET /api/districts/with-states  
+   - Description: Join district data with their corresponding state details.  
+
+9. Calculate Average Population Density  
+   - URL: GET /api/states/average-density  
+   - Description: Calculate the average population density for each state.  
+
+10. Retrieve All States  
+   - URL: GET /api/states  
+   - Description: Fetch details of all states in the database.  
+
+11. Retrieve All Districts  
+   - URL: GET /api/districts  
+   - Description: Fetch details of all districts in the database.  
